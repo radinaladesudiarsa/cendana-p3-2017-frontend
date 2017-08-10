@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS</title>
+
+  <!-- <!— <script src="jquery-3.2.1.min.js"></script> —> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+
+<div class="container">
+<div class="judul"></div>
+</div>
+<div class="container2">
+<div class="container3"></div>
+ <center>
+
+    <h2></h2>
+    <img src="">
+    <p class="konten"></p>
+   
+ </center>
+ </div>
+ <div class="container">
+</div>
+
+
+<script>
+
+  $(document).ready(function(){
+
+   
+    $(".container").css("margin","auto");
+    $(".container").css("width","70%");
+    $(".container").css("position", "relative");
+    $(".container").css("color", "orange");
+    $(".container").css("background", "#000");
+    $(".container").css("height", "60px");
+    $(".container").css("fontsize", "20px");
+    $(".judul").html("FOOD CORNER");
+    $(".judul").css("text-size", "40px");
+    $(".judul").css("color", "orange");
+    $(".judul").html("FOOD CORNER");
+    
+
+        
+    $(".container2").css("margin","auto");
+    $(".container2").css("width","70%");
+    $(".container2").css("position", "relative");
+    $(".container2").css("color", "orange");
+    $(".container2").css("background", "orange");
+    $(".container2").css("height", "80 ");
+
+
+    $(".container3").css("float","left");
+    $(".container3").css("width","20%");
+    //$(".container3").css("position", "relative");
+    $(".container3").css("color", "orange");
+    $(".container3").css("background", "black");
+//$(".container3").css("height", "");
+
+
+
+
+   
+    $("img").attr("src", "h.jpg");
+    $("img").css("width", "40%");
+
+    $("h2").html("Resep Tumis Kangkung");
+    $("h2").css("color", "#000");
+
+
+    $("small").html("Date 13 Juli 2017");
+    $("small").css("color", "#000");
+    $("small").css("padding", "10px");
+
+
+    $("span").click(function(){
+    $(this).hide();
+    $("span").css("color", "white");
+    $("span").css("padding", "10px");
+
+  });
+
+    $(".konten").css("color", "white");
+    $(".konten").css("padding", "10px");
+    $(".konten").html("umis kailan cah daging sapi merupakan hidangan spesial yang bisa anda buat sebagai menu makan di rumah. Tumisan yang lezat nan sehat ini akan membuat makan anda bersama keluarga terasa lebih istimewa. Cita rasanya yang sudah tidak diragukan lagi akan membuat…");
+
+  });
+
+</script>
+
+</body>
+</html>

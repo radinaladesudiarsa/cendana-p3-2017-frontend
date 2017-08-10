@@ -1,0 +1,306 @@
+body { 
+	overflow-x: hidden; 
+}
+span{
+
+	text-align: left;
+	position: relative;
+}
+.tm-header {
+	background: #000000;
+	height: 80px;
+	width: 100%;
+	position: relative;
+	z-index: 100;
+}
+.container{
+ padding-right:15px;
+ padding-left:15px;
+ }
+ .tm-site-name {
+	padding-top: px; 
+	color: #FCDD44;
+	font-size: 27px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.tm-site-name:hover,
+.tm-site-name:focus {
+	color: 	#FF720B;
+}
+a{
+	text-decoration: none;
+}
+
+.tm-nav.show {
+		height: auto;
+	}
+.tm-nav {
+		/*height: 0;*/
+	    position: relative;
+	    z-index: 1000;
+	   
+	}
+	.tm-nav li { 
+		float: none;
+		list-style: none;
+		display: inline-block;
+	 }
+	.tm-nav li a {
+		color: #FF720B;
+	    padding: 20px 30px 10px;
+	}
+	.mobile-menu-icon {
+	   
+	    font-size: 20px;
+	    position: fixed;
+	    top: 15px;
+	    right: 15px;/*
+	    background-color: rgba(15, 15, 15, 0.7);*/
+	    padding: 10px 15px;
+	    z-index: 1000;
+	}
+
+	.home{
+		position: relative;
+		background: white;
+		width: 100%;
+	}
+	.content{
+		background-color: #fff;
+		text-align: justify;
+		position: relative;
+		width: 60%
+		/*margin: 20px 0px 0px;*/
+
+		
+
+	}
+	.content2{
+		background-color: #fff;
+		width: 30%;
+		margin: 40px 400px 0px;
+
+
+	}
+	.content3{
+		background: brown;
+		float: right;
+		width: 40%;
+		
+		
+
+	}
+	.content4{
+	-webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    text-align: justify;
+     -webkit-column-rule: 5px double #F2B208;
+    -moz-column-rule: 5px double #F2B208;
+    column-rule: 5px double #F2B208;
+	}
+.tm-footer {
+    clear: both;
+    position: relative;
+    z-index: 10;
+    height: 2em;
+    margin-top: 3em;
+    background-color: #000;
+    color: white;
+    text-align:center;
+
+}
+.hat{
+	height: 75px;
+
+}
+.footer{
+	padding:20px;
+}
+.kotak_kanan{
+
+	float: right;
+
+}
+
+.bacajuga{
+
+	
+	margin: 100px 0px 400px;
+	background: #fff;
+	width: 30%;
+	position: relative;
+	box-shadow: 10px 10px 5px #888888;
+}
+.bacajuga img{
+	margin: 0px auto;
+}
+.bacajuga2{
+
+	
+	margin: 400px 0px 400px;
+	background: #fff;
+	width: 30%;
+	position: relative;
+	box-shadow: 10px 10px 5px #888888;
+}
+.judul_kanan{
+	position: absolute;
+	margin: 20px 1100px 0px;
+}
+
+.article {
+    background: green;
+}
+
+.article #mainbar {
+    float: left;
+    width: 100%;
+    background: #fff;
+
+}
+.img {
+    border-radius: 70%;
+
+}
+.text{
+	text-align: justify;
+}
+
+.article #sidebar {
+    float: right;
+    background: #fff;
+    width: 30%;
+    height: 1500px;
+    padding: 20px;
+}
+
+.article #sidebar .widget { 
+	width: 80%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px; 
+}
+.article #sidebar .widget img{
+   width: 100%;
+   
+}
+.list {
+    background: #ff9900;
+    padding: 20px;
+    margin: 40px 0px 0px;
+    width: 70%;
+
+}
+.list li {
+    background:  #ffff66;
+    margin: 5px;
+    padding: 5px;
+}
+.mainbar {
+    float: right;
+    width: 100%;
+    background: #fff;
+    text-align: center;
+}
+.mainbar table {
+    border-collapse: collapse;
+    width: 80%;
+}
+
+.mainbar th {
+    height: 50px;
+    background-color: 	#FF720B;
+    color: white;
+}
+.mainbar .sidebar {
+    float: left;
+    background: #FCDD44;
+    width: 10%;
+    height: 1500px;
+    padding: 20px;
+}
+
+.mainbar .sidebar .konten { 
+	width: 80%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px; 
+}
+.mainbar .sidebar .konten img{
+   width: 100%;
+   
+}
+.new {
+  
+    text-align: center;
+}
+
+.kanan {
+    float: right;
+    background: #fff;
+    width: 25%;
+    padding: 10px;
+}
+.kanan .widget{
+
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px; 
+
+}
+.kiri {
+    float: left;
+    background: #FCDD44;
+    width: 10%;
+    height: 1500px;
+    padding: 20px;
+}
+.login{
+    max-width: 340px;
+    margin:100px auto;
+    background: #f9f9f9;
+    box-shadow: 0 0 10px #aaa;
+}
+#login {
+    text-align: center;
+    padding: 25px 10px;
+    background-color:   	#000;
+    color: #FFF;
+	font-size: 27px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+fieldset{
+    margin: 0;
+    border: none;
+}
+form{
+    padding: 0;
+    margin: 0;
+    padding: 15px;
+}
+.input
+       {
+    width: 100%;
+    padding: 1em;
+    margin-top: 1.2em;
+    color: #888;
+}
+.submit{
+    width: 100%;
+    padding: 1.4em;
+    margin: 1.5em 0;
+    color: #888;
+    background-color: 	#E8BA0F;
+    border:none;
+    color:#eee;
+    border-bottom: 4px solid transparent;
+}
+.submit[type="submit"]:hover{
+    opacity: 0.8;
+    border-color:  	#E8BA0F;
+}
+

@@ -1,0 +1,73 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS</title>
+
+  <!-- <!— <script src="jquery-3.2.1.min.js"></script> —> -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body>
+<nav>
+<ul>
+          <li>
+                    <a href="#">Home</a>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li>
+                            <a href="#">Contact</a>
+                            <ul>
+                                <li><a href="#">Personal</a></li>
+                                ...
+                            </ul>
+                        </li>
+                        ...
+                    </ul>
+                </li>
+
+        </li>
+        <li class="dropdown">
+            <a href="#">Category</a>
+            <ul class="sub-menu">
+                <li><a href="#">Sport</a></li>
+                <li class="dropdown">
+                    <a href="#">Football</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">boot</a></li>
+                        <li class="dropdown">
+                            <a href="#">Atribut</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Hat</a>
+                                  <ul class="sub-menu">
+                                    <li><a href="#">boot</a></li>
+                                    </ul>
+                                   </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    </nav>
+</body>
+</html>
+
+
+<script>
+	$(document).ready(function() {
+    $('ul ul').hide();
+    $( 'li' ).hover(
+        
+        function(){
+            $(this).children('ul').slideDown(200);
+        },
+        function(){
+            $(this).children('ul').slideUp(200);
+        }
+    );
+}); 
+</script>
