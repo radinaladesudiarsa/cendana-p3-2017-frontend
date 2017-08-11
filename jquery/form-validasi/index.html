@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body>
+<form class="form" method="post" action="#">
+<table>
+<tr>
+<td>Nama: </td>
+<td><input type="text" name="dname" id="name"></td>
+</tr>
+<tr>
+<td>Email: </td>
+<td><input type="text" name="demail" id="email"></td>
+</tr>
+<tr>
+<td>Password: </td>
+<td><input type="password" name="password" id="password"></td>
+</tr>
+<tr>
+<td>Confirm Password :</td>
+<td><input type="password" name="cpassword" id="cpassword"></td>
+<td><input type="button" name="register" id="register" value="Register"></td>
+</tr>
+
+</table>
+</form>
+</div>
+</body>
+</html>
+<script>
+$(document).ready(function() {
+$("#register").click(function() {
+			var name = $("#name").val();
+			var sEmail = $("#email").val();
+			var password = $("#password").val();
+			var cpassword = $("#cpassword").val();
+if (name == '' & sEmail == '' & password == '' & cpassword == '') {
+alert("tolong lengkapi form yang belum di isi");
+} else if ((password.length) < 8) {
+alert("Password minimal 8 karakter");
+}
+else if (!(password).match(cpassword)) {
+alert("passwordmu belum cocok, coba lagi!!!");
+}
+else if (!validate(sEmail)) {
+	alert('alamat email tidak valid');}
+else{
+	alert('Sukses registrasi');
+  }
+function validate(sEmail) {
+		var filter = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
+		if (filter.test(sEmail)) {
+		return true;
+	}
+}
+});
+}); 
+</script>
